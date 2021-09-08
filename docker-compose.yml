@@ -1,0 +1,43 @@
+version: '3.4'
+services:
+  # Database
+  db:
+    image: bitnami/mariadb:10.5
+    stop_grace_period: 60s
+    volumes:
+      - /var/lib/mysql
+    restart: "no"
+    user: root
+    ports:
+      - 3306
+    environment:
+      - MARIADB_ROOT_USER=root
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=drupal
+      - MARIADB_USER=drupal
+      - MARIADB_PASSWORD=drupal
+      - MARIADB_PORT_NUMBER=3306
+      - VIRTUAL_PORT=3306
+      - VIRTUAL_HOST=db.corsodrupal.bmeme.docker
+      - DNSDOCK_ALIAS=db.corsodrupal.bmeme.docker
+      - MARIADB_EXTRA_FLAGS=--max_allowed_packet=256M --wait_timeout=3600 --innodb_log_file_size=256M
+
+  # Application
+  app:
+    image: drupal:9.2.5-php7.4-apache-buster
+    volumes:
+      - ".:/opt/drupal"
+    restart: "no"
+    depends_on:
+      - db
+    links:
+      - db:db
+    ports:
+      - 80
+    expose:
+      - 80
+    environment:
+      - VIRTUAL_PORT=80
+      - VIRTUAL_HOST=app.corsodrupal.bmeme.docker
+      - DNSDOCK_ALIAS=app.corsodrupal.bmeme.docker
+    working_dir: /opt/drupal
