@@ -40,21 +40,23 @@ in a shell into your `app` container. You can open a shell into `app` container 
 $ docker-compose exec app bash
 ```
 
-### Commands
-
-1. Install `mariadb-client` into the `app` container (needed by install process)
+### Prerequisites
+Make sure that your host has installed and in PATH the mysql client
+If you are using the docker container you can simply type:
 
 ```
 # apt-get update && apt-get install -y mariadb-client
 ```
 
-2. Run composer
+### Commands
+
+1. Run composer
 
 ```
 # composer install --prefer-dist
 ```
 
-3. Install Drupal from existing configurations
+2. Install Drupal from existing configurations
 
 ```
 # vendor/bin/drush site:install \
@@ -83,7 +85,7 @@ Here they come:
 - `[DB_PORT]`: `3306`
 - `[DB_NAME]`: `drupal`
 
-4. Ok, it's done. At the end of the process, you'll be given the `admin` password
+3. Ok, it's done. At the end of the process, you'll be given the `admin` password
 with which you can login. Otherwise you can obtain a `one-time-login` URL typing:
 
 ```
