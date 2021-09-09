@@ -28,13 +28,13 @@ $ docker-compose up -d
 is enough.
 
 If you aren't using docker remember to create a database instance on your
-database server before to start installation.
+database server before starting installation.
 
 ### How to install
 
 ### Disclaimer
 If you are using Docker, remember to execute the following commands
-in a shell into your `app` container. You can do that typing:
+in a shell into your `app` container. You can open a shell into `app` container typing:
 
 ```
 $ docker-compose exec app bash
@@ -42,13 +42,13 @@ $ docker-compose exec app bash
 
 ### Commands
 
-1. Install `mariadb-client` into the `app` container
+1. Install `mariadb-client` into the `app` container (needed by install process)
 
 ```
 # apt-get update && apt-get install -y mariadb-client
 ```
 
-2. Install Drupal vendor libraries
+2. Run composer
 
 ```
 # composer install --prefer-dist
@@ -67,11 +67,21 @@ $ docker-compose exec app bash
 ```
 
 Remember to substitute:
-- [DB_USER] = the database granted user
-- [DB_PASS] = the password chosen for that user
-- [DB_HOST] = the IP or FQDN of database instance
-- [DB_PORT] = the port on which your database instance is binding
-- [DB_NAME] = the name of the chosen database
+- `[DB_USER]` with the database granted user
+- `[DB_PASS]` with the password chosen for that user
+- `[DB_HOST]` with the IP or FQDN of database instance
+- `[DB_PORT]` with the port on which your database instance is binding
+- `[DB_NAME]` with the database name
+
+If you are using docker, all of these stuff are already defined in
+`docker-compose.yml` file.
+Here they come:
+
+- `[DB_USER]`: `drupal`
+- `[DB_PASS]`: `drupal`
+- `[DB_HOST]`: `db`
+- `[DB_PORT]`: `3306`
+- `[DB_NAME]`: `drupal`
 
 4. Ok, it's done. At the end of the process, you'll be given the `admin` password
 with which you can login. Otherwise you can obtain a `one-time-login` URL typing:
@@ -79,4 +89,8 @@ with which you can login. Otherwise you can obtain a `one-time-login` URL typing
 ```
 # vendor/bin/drush uli
 ```
+
+## Author Information
+
+This project was created in 2021 by [Bmeme](https://www.bmeme.com) for its educational purposes.
 
