@@ -62,7 +62,7 @@ If you are using the docker container you can simply type:
 # vendor/bin/drush site:install \
   --db-url=mysql://[DB_USER]:[DB_PASS]@[DB_HOST]:[DB_PORT]/[DB_NAME] \
   --account-name=admin \
-  --account-name=admin@bmeme.com \
+  --account-mail=admin@bmeme.com \
   --site-mail=drupalcourse@bmeme.com \
   --site-name="Drupal Course" \
   --existing-config minimal
