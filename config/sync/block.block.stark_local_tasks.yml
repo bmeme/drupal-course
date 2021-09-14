@@ -1,5 +1,5 @@
 uuid: 02af7df2-8e69-4e14-b06b-58ae1f0d36f2
-langcode: en
+langcode: it
 status: true
 dependencies:
   theme:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: Schede
   provider: core
   label_display: '0'
   primary: true

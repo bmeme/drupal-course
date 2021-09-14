@@ -14,9 +14,11 @@ module:
   filter: 0
   image: 0
   inline_form_errors: 0
+  language: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
+  locale: 0
   media: 0
   media_library: 0
   menu_link_content: 0
@@ -46,3 +48,4 @@ theme:
 profile: minimal
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
+langcode: it

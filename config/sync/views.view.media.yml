@@ -1,5 +1,5 @@
 uuid: 003ac16f-8ef8-4474-a292-def38dec4987
-langcode: en
+langcode: it
 status: true
 dependencies:
   config:
@@ -21,7 +21,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Default
+    display_title: Predefinito
     position: 0
     display_options:
       access:
@@ -42,13 +42,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtra
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
           expose_sort_order: true
           sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_desc_label: Disc
       pager:
         type: full
         options:
@@ -58,17 +58,17 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Voci per pagina'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tutto -'
             offset: false
-            offset_label: Offset
+            offset_label: Scostamento
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
-            first: '« First'
-            last: 'Last »'
+            previous: '‹ Precedente'
+            next: 'Seguente ›'
+            first: '« Prima'
+            last: 'Ultima »'
           quantity: 9
       style:
         type: table
@@ -184,7 +184,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: Azione
           include_exclude: exclude
           selected_actions: {  }
           entity_type: media
@@ -196,7 +196,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Thumbnail
+          label: Miniatura
           exclude: false
           alter:
             alter_text: false
@@ -309,7 +309,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Type
+          label: Tipo
           exclude: false
           alter:
             alter_text: false
@@ -374,7 +374,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Author
+          label: Autore
           exclude: false
           alter:
             alter_text: false
@@ -439,7 +439,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Stato
           exclude: false
           alter:
             alter_text: false
@@ -484,8 +484,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Pubblicato
+            format_custom_false: 'Non pubblicato'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -506,7 +506,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Updated
+          label: Aggiornato
           exclude: false
           alter:
             alter_text: false
@@ -573,7 +573,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operazioni
           exclude: false
           alter:
             alter_text: false
@@ -673,7 +673,7 @@ display:
           exposed: true
           expose:
             operator_id: bundle_op
-            label: Type
+            label: Tipo
             description: ''
             use_operator: false
             operator: bundle_op
@@ -716,7 +716,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'True'
+            label: Vero
             description: null
             use_operator: false
             operator: status_op
@@ -730,7 +730,7 @@ display:
             operator_list: {  }
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: 'Stato pubblicazione'
             description: ''
             identifier: status
             optional: true
@@ -741,11 +741,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Pubblicato
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Non pubblicato'
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -803,7 +803,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Lingua
             description: ''
             use_operator: false
             operator: langcode_op
@@ -862,7 +862,7 @@ display:
           admin_label: ''
           empty: true
           tokenize: false
-          content: 'No media available.'
+          content: 'Non è disponibile alcun contributo mediale.'
           plugin_id: text_custom
       relationships: {  }
       arguments: {  }

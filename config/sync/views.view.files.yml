@@ -1,5 +1,5 @@
 uuid: dbd4141f-1354-4129-b0ba-24335bc113ff
-langcode: en
+langcode: it
 status: true
 dependencies:
   module:
@@ -8,9 +8,9 @@ dependencies:
 _core:
   default_config_hash: hfAVzEhCVBiV_vsgQ0UP4CfSHmh2YSiEUhfRz-LMYAQ
 id: files
-label: Files
+label: File
 module: file
-description: 'Find and manage files.'
+description: 'Trova e gestisci i file.'
 tag: default
 base_table: file_managed
 base_field: fid
@@ -18,7 +18,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Default
+    display_title: Predefinito
     position: 0
     display_options:
       access:
@@ -39,13 +39,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtra
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Ripristina
+          exposed_sorts_label: 'Ordina per'
           expose_sort_order: true
           sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_desc_label: Disc
       pager:
         type: mini
         options:
@@ -54,16 +54,16 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Precedente'
+            next: 'Seguente ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Voci per pagina'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tutto -'
             offset: false
-            offset_label: Offset
+            offset_label: Scostamento
       style:
         type: table
         options:
@@ -186,7 +186,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Name
+          label: Nome
           exclude: false
           alter:
             alter_text: false
@@ -249,7 +249,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'MIME type'
+          label: 'Tipo MIME'
           exclude: false
           alter:
             alter_text: false
@@ -301,7 +301,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Size
+          label: Dimensione
           exclude: false
           alter:
             alter_text: false
@@ -353,7 +353,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Status
+          label: Stato
           exclude: false
           alter:
             alter_text: false
@@ -397,8 +397,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_false: Temporary
-            format_custom_true: Permanent
+            format_custom_false: Temporaneo
+            format_custom_true: Permanente
           plugin_id: field
           entity_type: file
           entity_field: status
@@ -409,7 +409,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Upload date'
+          label: 'Data di caricamento'
           exclude: false
           alter:
             alter_text: false
@@ -465,7 +465,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Changed date'
+          label: 'Data di ultima modifica'
           exclude: false
           alter:
             alter_text: false
@@ -521,7 +521,7 @@ display:
           relationship: fid
           group_type: sum
           admin_label: ''
-          label: 'Used in'
+          label: 'Usato in'
           exclude: false
           alter:
             alter_text: false
@@ -585,7 +585,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: Filename
+            label: 'Nome file'
             description: ''
             use_operator: false
             operator: filename_op
@@ -627,7 +627,7 @@ display:
           exposed: true
           expose:
             operator_id: filemime_op
-            label: 'MIME type'
+            label: 'Tipo MIME'
             description: ''
             use_operator: false
             operator: filemime_op
@@ -669,7 +669,7 @@ display:
           exposed: true
           expose:
             operator_id: status_op
-            label: Status
+            label: Stato
             description: ''
             use_operator: false
             operator: status_op
@@ -700,7 +700,7 @@ display:
           entity_type: file
           entity_field: status
       sorts: {  }
-      title: Files
+      title: File
       header: {  }
       footer: {  }
       empty:
@@ -709,7 +709,7 @@ display:
           table: views
           field: area_text_custom
           empty: true
-          content: 'No files available.'
+          content: 'Nessun file disponibile.'
           plugin_id: text_custom
       relationships:
         fid:
@@ -736,13 +736,13 @@ display:
   page_1:
     display_plugin: page
     id: page_1
-    display_title: 'Files overview'
+    display_title: 'Panoramica file'
     position: 1
     display_options:
       path: admin/content/files
       menu:
         type: tab
-        title: Files
+        title: File
         description: ''
         menu_name: admin
         weight: 0
@@ -773,7 +773,7 @@ display:
   page_2:
     display_plugin: page
     id: page_2
-    display_title: 'File usage'
+    display_title: 'Utilizzo del file'
     position: 2
     display_options:
       display_description: ''
@@ -799,16 +799,16 @@ display:
           id: 0
           total_pages: 0
           tags:
-            previous: '‹ Previous'
-            next: 'Next ›'
+            previous: '‹ Precedente'
+            next: 'Seguente ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Voci per pagina'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tutto -'
             offset: false
-            offset_label: Offset
+            offset_label: Scostamento
       filters: {  }
       filter_groups:
         operator: AND
@@ -821,7 +821,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Entity
+          label: Entità
           exclude: false
           alter:
             alter_text: false
@@ -871,7 +871,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Entity type'
+          label: 'Tipo di entità'
           exclude: false
           alter:
             alter_text: false
@@ -920,7 +920,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Registering module'
+          label: 'Registrazione del modulo'
           exclude: false
           alter:
             alter_text: false
@@ -969,7 +969,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Use count'
+          label: 'Contatore di utilizzo'
           exclude: false
           alter:
             alter_text: false
@@ -1020,7 +1020,7 @@ display:
           suffix: ''
           plugin_id: numeric
       group_by: false
-      title: 'File usage'
+      title: 'Utilizzo del file'
       arguments:
         fid:
           id: fid
@@ -1033,7 +1033,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Tutti
           title_enable: true
           title: 'File usage information for {{ arguments.fid }}'
           default_argument_type: fixed

@@ -1,10 +1,10 @@
 uuid: be08083c-f78a-4218-b144-59f0c4cd3b87
-langcode: en
+langcode: it
 status: true
 dependencies: {  }
 _core:
   default_config_hash: nzL5d024NjXIX_8TlT6uFAu973lmfkmHklJC-2i9rAE
 id: medium
-label: 'Default medium date'
+label: 'Formato predefinito data media'
 locked: false
 pattern: 'D, m/d/Y - H:i'

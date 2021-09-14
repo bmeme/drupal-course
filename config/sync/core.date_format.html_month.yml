@@ -1,10 +1,10 @@
 uuid: fe7f4cf2-ee7c-41d9-ab45-d3db3fcf0e91
-langcode: en
+langcode: it
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Z7KuCUwM_WdTNvLcoltuX3_8d-s-8FZkTN6KgNwF0eM
 id: html_month
-label: 'HTML Month'
+label: 'Mese HTML'
 locked: true
 pattern: Y-m

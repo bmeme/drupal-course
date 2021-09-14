@@ -1,5 +1,5 @@
 uuid: c30670e7-1164-4520-8a4c-6a2948127aa2
-langcode: en
+langcode: it
 status: false
 dependencies:
   module:
@@ -7,6 +7,6 @@ dependencies:
 _core:
   default_config_hash: ElrtInxGjZd7GaapJ5O9n-ugi2hG2IxFivtgn0tHOsk
 id: node.full
-label: 'Full content'
+label: 'Contenuto completo'
 targetEntityType: node
 cache: true
