@@ -1,0 +1,22 @@
+uuid: 3a49724f-5b83-4e3d-891e-27d3ff5bd7f3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_course
+_core:
+  default_config_hash: 7cvXIzw8NabmQCWMPqBz0mvIQZzXUZB3OeOTa5eqbCo
+id: drupal_course_primary_local_tasks
+theme: drupal_course
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

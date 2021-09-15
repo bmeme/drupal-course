@@ -1,0 +1,22 @@
+uuid: b236aef4-6573-425d-a3d6-bef20661259e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_course
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: drupal_course_content
+theme: drupal_course
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

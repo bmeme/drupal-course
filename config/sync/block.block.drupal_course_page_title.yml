@@ -1,0 +1,20 @@
+uuid: 40214202-5144-48e4-b987-2a2805de4909
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_course
+_core:
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
+id: drupal_course_page_title
+theme: drupal_course
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
