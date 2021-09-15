@@ -1,0 +1,14 @@
+# Required
+name: Drupal Course
+type: theme
+core_version_requirement: ^8 || ^9
+base theme: false
+
+# Optional
+description: 'A very simple theme for education purposes.'
+libraries:
+  - drupal_course/global-styling
+regions:
+  header: Header
+  content: Content
+  footer: Footer
