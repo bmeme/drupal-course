@@ -1,0 +1,22 @@
+uuid: f12ca0c5-e319-412d-b4d9-b57e337e0eac
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_course_foundation
+_core:
+  default_config_hash: 7cvXIzw8NabmQCWMPqBz0mvIQZzXUZB3OeOTa5eqbCo
+id: drupal_course_foundation_primary_local_tasks
+theme: drupal_course_foundation
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

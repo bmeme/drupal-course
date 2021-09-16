@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "871abcf4b61c5f0416dd875e86a100f7",
+    "content-hash": "c90e54722b58b1e55fd299e863ade474",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2299,6 +2299,71 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/twig_tweak",
                 "issues": "https://www.drupal.org/project/issues/twig_tweak"
+            }
+        },
+        {
+            "name": "drupal/zurb_foundation",
+            "version": "dev-6.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/zurb-foundation.git",
+                "reference": "cff12d9e4e73ac308f76cc023f501706b9e4aff8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-6.x": "6.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-6.0-alpha6+9-dev",
+                    "datestamp": "1618421403",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Samuel Mortensen (samuelmortenson)",
+                    "homepage": "https://www.drupal.org/u/samuelmortenson",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Simone Wood (sim_1)",
+                    "homepage": "https://www.drupal.org/u/sim_1",
+                    "role": "Co-Maintainer"
+                },
+                {
+                    "name": "Dan Feidt (HongPong)",
+                    "homepage": "https://www.drupal.org/u/hongpong",
+                    "role": "Co-Maintainer"
+                },
+                {
+                    "name": "sim_1",
+                    "homepage": "https://www.drupal.org/user/3515959"
+                }
+            ],
+            "description": "Base Drupal theme based on Zurb Foundation 6.x.",
+            "homepage": "http://drupal.org/project/zurb_foundation",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/zurb_foundation",
+                "issues": "http://drupal.org/project/issues/zurb_foundation"
             }
         },
         {
@@ -7302,7 +7367,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/zurb_foundation": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

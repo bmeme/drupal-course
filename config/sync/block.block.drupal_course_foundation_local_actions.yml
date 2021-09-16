@@ -1,0 +1,20 @@
+uuid: 17cc2842-33b1-4894-9b7a-f23adc352afc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_course_foundation
+_core:
+  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
+id: drupal_course_foundation_local_actions
+theme: drupal_course_foundation
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

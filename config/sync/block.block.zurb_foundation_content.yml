@@ -1,0 +1,22 @@
+uuid: b1e43c38-fe6b-4a85-8e9f-4c49433a1e34
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - zurb_foundation
+_core:
+  default_config_hash: XBQf58SiJCBnW9CRSUAWib8dt1wdIbeUAYTk5wlQLlQ
+id: zurb_foundation_content
+theme: zurb_foundation
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

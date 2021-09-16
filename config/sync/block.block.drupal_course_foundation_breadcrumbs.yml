@@ -1,0 +1,22 @@
+uuid: 38f31799-b534-4896-ba4e-a947fa8744f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_course_foundation
+_core:
+  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+id: drupal_course_foundation_breadcrumbs
+theme: drupal_course_foundation
+region: header
+weight: -3
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

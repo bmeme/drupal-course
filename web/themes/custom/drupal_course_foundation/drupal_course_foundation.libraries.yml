@@ -1,0 +1,7 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/drupal_course_foundation.css: {}
+  js:
+    js/drupal_course_foundation.js: {}

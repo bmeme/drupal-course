@@ -1,0 +1,22 @@
+uuid: 376c3e1d-fc53-4d1d-960b-5941f499249d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupal_course_foundation
+_core:
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: drupal_course_foundation_messages
+theme: drupal_course_foundation
+region: header
+weight: 2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

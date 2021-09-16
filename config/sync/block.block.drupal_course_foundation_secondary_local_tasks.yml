@@ -1,0 +1,22 @@
+uuid: 64ac2ebf-004c-44fb-9663-c1fbb85d5e66
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal_course_foundation
+_core:
+  default_config_hash: D_hUB_AW2IvKbVo3lVG-B2KfTsX6xJ-CxfOcRYUnL3E
+id: drupal_course_foundation_secondary_local_tasks
+theme: drupal_course_foundation
+region: header
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }
