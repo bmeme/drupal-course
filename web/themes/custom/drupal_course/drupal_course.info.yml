@@ -2,12 +2,20 @@
 name: Drupal Course
 type: theme
 core_version_requirement: ^8 || ^9
-base theme: false
+base theme: olivero
 
 # Optional
-description: 'A very simple theme for education purposes.'
+description: "A very simple theme for education purposes."
 libraries:
   - drupal_course/global-styling
+libraries-override:
+  olivero/global-styling:
+    css:
+      base:
+        css/base/fonts.css: false
+        css/base/variables.css: false
+        css/base/base.css: false
+        css/base/utility.css: false
 regions:
   header: Header
   content: Content
