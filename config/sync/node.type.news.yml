@@ -1,0 +1,17 @@
+uuid: 3e58a040-3bc8-40a0-863a-743d081c4670
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Notizia
+type: news
+description: 'Usa questo tipo di contenuto per creare una notizia'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

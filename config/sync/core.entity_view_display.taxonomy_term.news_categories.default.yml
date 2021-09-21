@@ -1,0 +1,14 @@
+uuid: 714649a5-be38-4618-93c5-fa14f780b39f
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.news_categories
+id: taxonomy_term.news_categories.default
+targetEntityType: taxonomy_term
+bundle: news_categories
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

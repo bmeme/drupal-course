@@ -1,0 +1,29 @@
+uuid: d1f0c70c-8789-4902-a191-7dbf97120c39
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_category
+    - node.type.news
+    - taxonomy.vocabulary.news_categories
+id: node.news.field_news_category
+field_name: field_news_category
+entity_type: node
+bundle: news
+label: 'Categoria Notizia'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_categories: news_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

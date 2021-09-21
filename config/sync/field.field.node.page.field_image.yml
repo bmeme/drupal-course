@@ -1,0 +1,29 @@
+uuid: a0d711e8-f6cc-43f6-bdf7-20b985c34e70
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - media.type.immagini_generiche
+    - node.type.page
+id: node.page.field_image
+field_name: field_image
+entity_type: node
+bundle: page
+label: Immagine
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      immagini_generiche: immagini_generiche
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

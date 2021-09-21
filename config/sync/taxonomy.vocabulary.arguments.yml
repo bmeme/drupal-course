@@ -1,0 +1,8 @@
+uuid: 62fda757-82d5-4953-ad5b-278155cafec2
+langcode: it
+status: true
+dependencies: {  }
+name: Argomenti
+vid: arguments
+description: 'Usa questo vocabolario per inserire nuovi argomenti da associare ad un Blog Post'
+weight: 0

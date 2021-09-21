@@ -1,0 +1,11 @@
+uuid: 67aef2bb-728b-4dda-92e8-f6b432353f7d
+langcode: it
+status: true
+dependencies:
+  config:
+    - media.type.immagini_generiche
+id: media.immagini_generiche
+target_entity_type_id: media
+target_bundle: immagini_generiche
+default_langcode: site_default
+language_alterable: false

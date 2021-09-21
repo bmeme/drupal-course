@@ -1,0 +1,30 @@
+uuid: cf104e6a-bbd7-4a1a-9c86-6e28e731a239
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.media.gallerie.field_media_image_1
+    - image.style.large
+    - media.type.gallerie
+  module:
+    - image
+id: media.gallerie.default
+targetEntityType: media
+bundle: gallerie
+mode: default
+content:
+  field_media_image_1:
+    label: visually_hidden
+    weight: 0
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

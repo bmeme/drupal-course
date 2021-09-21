@@ -1,0 +1,14 @@
+uuid: ff2421c2-fe4c-4196-9f22-688a45aac891
+langcode: it
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.arguments
+id: taxonomy_term.arguments.default
+targetEntityType: taxonomy_term
+bundle: arguments
+mode: default
+content: {  }
+hidden:
+  description: true
+  langcode: true

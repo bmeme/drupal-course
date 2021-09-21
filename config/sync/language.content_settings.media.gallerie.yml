@@ -1,0 +1,11 @@
+uuid: 1aefc20b-b38f-43da-8d03-d969e6561f0c
+langcode: it
+status: true
+dependencies:
+  config:
+    - media.type.gallerie
+id: media.gallerie
+target_entity_type_id: media
+target_bundle: gallerie
+default_langcode: site_default
+language_alterable: false

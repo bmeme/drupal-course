@@ -1,0 +1,20 @@
+uuid: b4143bbe-0dcb-4999-a5a7-cda5e26064ca
+langcode: it
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: media.field_arguments
+field_name: field_arguments
+entity_type: media
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

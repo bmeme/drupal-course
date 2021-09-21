@@ -1,0 +1,29 @@
+uuid: 96ba5935-2e4f-4e48-8524-60251fa7f92e
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_arguments
+    - media.type.immagini_generiche
+    - taxonomy.vocabulary.arguments
+id: media.immagini_generiche.field_arguments
+field_name: field_arguments
+entity_type: media
+bundle: immagini_generiche
+label: Argomento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      arguments: arguments
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

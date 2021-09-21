@@ -1,0 +1,38 @@
+uuid: d29afbe2-8416-4fc9-bfa9-aaa4c5c15504
+langcode: it
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.immagini_generiche.field_arguments
+    - field.field.media.immagini_generiche.field_media_image
+    - image.style.thumbnail
+    - media.type.immagini_generiche
+  module:
+    - image
+id: media.immagini_generiche.media_library
+targetEntityType: media
+bundle: immagini_generiche
+mode: media_library
+content:
+  field_arguments:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  path: true
+  status: true
+  uid: true

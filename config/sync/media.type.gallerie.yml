@@ -1,0 +1,13 @@
+uuid: 063a0fea-71de-455c-ba2f-37d7a9e523c0
+langcode: it
+status: true
+dependencies: {  }
+id: gallerie
+label: Gallerie
+description: 'Usa questo media type per inserire delle galleries nel sito'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map: {  }

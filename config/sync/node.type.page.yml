@@ -1,0 +1,19 @@
+uuid: 786650ec-6bfb-4c4e-8da2-e47b4bec8324
+langcode: it
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+      - footer
+    parent: 'main:'
+name: 'Pagina Base'
+type: page
+description: 'Usa questo tipo di contenuto per creare una pagina generica'
+help: 'Queste sono le linee guida per pubblicare una pagina Base'
+new_revision: true
+preview_mode: 1
+display_submitted: false

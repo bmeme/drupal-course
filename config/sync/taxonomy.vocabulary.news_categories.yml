@@ -1,0 +1,8 @@
+uuid: d59f3be7-f11a-4594-93c7-b16a29dc8d47
+langcode: it
+status: true
+dependencies: {  }
+name: 'Categorie Notizie'
+vid: news_categories
+description: 'Usa questo vocabolario per inserire nuove categorie per le notizie'
+weight: 0

@@ -1,0 +1,13 @@
+uuid: 48542559-e824-4329-a9dd-8f8d91e44bb4
+langcode: it
+status: true
+dependencies: {  }
+id: documents
+label: Documenti
+description: 'Usa questo media type per inserire dei documenti all''interno del sistema'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

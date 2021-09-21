@@ -1,0 +1,29 @@
+uuid: 19d7f8f6-d0ac-47cd-9699-bf583b8f302b
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - media.type.documents
+    - node.type.page
+id: node.page.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: page
+label: Allegato
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      documents: documents
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

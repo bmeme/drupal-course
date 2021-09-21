@@ -1,0 +1,28 @@
+uuid: 3353367a-558c-4757-952b-2e2d5aec8248
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.media.documents.field_media_file
+    - media.type.documents
+  module:
+    - file
+id: media.documents.default
+targetEntityType: media
+bundle: documents
+mode: default
+content:
+  field_media_file:
+    label: visually_hidden
+    weight: 0
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_table
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

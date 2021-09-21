@@ -1,0 +1,45 @@
+uuid: 6cba5e5e-c747-458f-90ce-95141dba75de
+langcode: it
+status: true
+dependencies:
+  config:
+    - field.field.node.page.body
+    - field.field.node.page.field_attachments
+    - field.field.node.page.field_image
+    - node.type.page
+  module:
+    - text
+    - user
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attachments:
+    type: entity_reference_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 0
+    label: visually_hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  links: true
