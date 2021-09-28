@@ -1,0 +1,6 @@
+name: 'Entity Counter'
+type: module
+description: 'My Awesome Module'
+version: VERSION
+package: 'Custom'
+core_version_requirement: ^8 || ^9

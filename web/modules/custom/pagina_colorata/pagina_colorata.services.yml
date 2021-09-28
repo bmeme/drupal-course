@@ -1,0 +1,4 @@
+services:
+  plugin.manager.color_plugin:
+    class: Drupal\pagina_colorata\ColorPluginManager
+    arguments: ['@module_handler', '@cache.discovery']

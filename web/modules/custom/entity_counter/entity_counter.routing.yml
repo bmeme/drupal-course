@@ -1,0 +1,8 @@
+
+entity_counter.entity_counter_controller_count:
+  path: '/entity-counter'
+  defaults:
+    _controller: '\Drupal\entity_counter\Controller\EntityCounterController::count'
+    _title: 'Entity Counter'
+  requirements:
+    _permission: 'access content'

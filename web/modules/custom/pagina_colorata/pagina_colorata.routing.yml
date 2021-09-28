@@ -1,0 +1,8 @@
+
+pagina_colorata.page:
+  path: '/pagina_colorata'
+  defaults:
+    _controller: '\Drupal\pagina_colorata\Controller\PaginaColorataController::view'
+    _title: 'Pagina colorata'
+  requirements:
+    _permission: 'access content'

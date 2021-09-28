@@ -1,0 +1,8 @@
+name: 'More colors'
+type: module
+description: 'Molto bene'
+version: VERSION
+package: 'Custom'
+core_version_requirement: ^8 || ^9
+dependencies:
+  - pagina_colorata
